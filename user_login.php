@@ -246,11 +246,14 @@ use PHPMailer\PHPMailer\PHPMailer;
             $mail->isHTML(true);
             $mail->Subject = "Reset Password Notification";
 
+            // Dynamically generate the base URL
+            $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
+
             $email_template = "
             <h2>Hello</h2>
             <h3>You are receiving this email because we received a password reset request for your account.</h3>
             <br/><br/>
-            <a href='localhost/software_eng/test/password_change.php?token=$token&reset_choice=$reset_choice'>Reset Password Link</a>
+            <a href='$base_url/password_change.php?token=$token&reset_choice=$reset_choice'>Reset Password Link</a>
             ";
 
             $mail->Body = $email_template;
