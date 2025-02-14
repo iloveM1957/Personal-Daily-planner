@@ -1,0 +1,287 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #f9f2ef;
+}
+
+.container{
+    width: 450px;
+    height: 530px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(67, 141, 238, 1);
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    background-color: rgba(224, 218, 218, 0.9); 
+}
+
+#error{
+    border:red 1px solid;
+    height:50px;
+    width:410px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(245, 188, 188);
+    visibility: hidden;
+}
+
+#error-message{
+    margin: 0px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+#form-top{
+    border: none;
+    height:395px;
+    margin: 0px 20px;
+}
+
+#form-bottom{
+    margin-bottom: 0px;
+    border: none;
+    height: 50px;
+    justify-content: center; 
+    align-items: center;
+    display:flex;
+}
+
+#header{
+    justify-content: center; 
+    align-items: center; 
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px; 
+    position:relative;
+    height:70px;
+    text-shadow: 2px 2px 4px rgba(67, 141, 238, 0.5);
+}
+
+.input-box{
+    border: none;
+    margin-top:15px;
+    margin-bottom:20px;
+    position: relative;     
+}
+
+#eyeIcon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+#name {
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-size: 18px 18px; 
+    background-position: right 12px center;
+}
+
+#name , #password{
+    width:390px;
+    border-radius: 10px;
+    height:40px;
+    border:transparent;
+    box-shadow: 0 0 15px rgba(67, 141, 238, 0.5);
+    outline: none;
+    padding-left:20px;
+}
+
+#name:focus, #password:focus{
+    box-shadow: 0 0 15px rgba(67, 141, 238, 1);
+}
+
+#choice{
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    width:115px;
+    height: 25px;
+}
+
+#choice option{
+    font-size: 14px;
+    text-align: center;
+}
+
+#login{
+    margin-top: 35px;
+    font-weight: 500;
+    height: 40px;
+    width: 410px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center; 
+    display:flex;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border: none;
+    background-color: rgb(152, 153, 152);
+}
+
+#login:active{
+    box-shadow: 0 0 15px rgba(139, 141, 139, 0.5);
+}
+
+#login:hover{
+    background-color: rgb(139, 141, 139);
+    transition: background-color 0.3s; 
+}
+
+#forgot_link{
+    align-items: center;
+    justify-content: center; 
+    display:flex;
+}
+
+#forgot{
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 15px;
+}
+
+#forgot:hover{
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#forgot:active{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+hr{
+    background-color: black;
+    height: 1px;
+}
+
+#register{
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 200px;
+    height: 45px;
+    background-color: rgb(19, 224, 19);
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#register:hover {
+    background-color: #0f77e7; 
+}
+
+.error_msg, .forgot_password {
+    height: 358px;
+    width: 380px;
+    background-color: #f2f1f1;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    z-index: 9999;
+  }
+
+  .forgot_password {
+    height: 290px;
+    width: 360px;
+  }
+  
+  .error_msg.open ,.forgot_password.open{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .error_msg img{
+    width: 80px;
+    margin-bottom: 30px;
+  }
+  
+  .error_msg h2, .forgot_password h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  } 
+  
+.error_msg p{
+    font-size: 18px;
+}
+
+.fa-xmark {
+margin-top: 20px;
+font-size: 20px;
+cursor: pointer;
+float: right;
+}
+
+#email{
+    width: 280px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#password_reset_link{
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(19, 224, 19);
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+#reset_choice{
+    margin-left: -245px;
+    outline: auto;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9997; 
+    visibility: hidden;
+  }
+  
+  .overlay.visible {
+    visibility: visible;
+  }

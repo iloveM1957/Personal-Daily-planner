@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+  background-color: #f0f0f0;  
+}
+
+.payment-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; 
+  width: 100%;
+}
+
+.payment-container {
+  background-color: #fff; /* Optional: Set a background color for the container */
+  padding: 20px; /* Add some padding */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  max-width: 500px; /* Set a maximum width for the container */
+  height: auto;
+  width: 100%; /* Ensure the container takes the full width available up to the max-width */
+}
+
+/* .title h2{
+
+}
+
+.payment-method h3{
+
+} */
+
+
+.secure_payment h2{
+  text-align: center;
+  margin-right: 10px;
+}
+
+.icon{
+  margin-right: 20px;
+}
+
+.fa-lock{
+  font-size: 17px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.map-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.user-details {
+  position: relative;
+  width: 500px;
+}
+
+.user-details p {
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+.user-address{
+  width: 300px;
+  word-wrap: break-word; /* For older browsers */
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#select-address-icon{
+  position: absolute;
+  right: 500px;
+  cursor: pointer;
+  top: 270px;
+  font-size: 18px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.credit-card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.required{
+  color: rgb(205, 7, 7);
+}
+
+.credit-card-details label {
+  margin-bottom: 5px; 
+  display: block; 
+}
+
+.credit-card-details input {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 20px;
+}
+
+.info{
+  margin-bottom:20px;
+}
+
+.info input {
+  margin-bottom: 20px; 
+  width: 300px;
+  height: 20px; 
+}
+
+.ewallet-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.ewallet-details label {
+  margin-bottom: 5px; 
+  display: block; 
+}
+
+.ewallet-details input {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 20px;
+}
+
+.expiration-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiration-cvv label, .expiration-cvv input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.expiration-cvv label:last-child, .expiration-cvv input:last-child {
+  margin-right: 0;
+}
+
+.total-price {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.total-price h4{
+  font-size: 20px;
+}
+
+.payment-buttons {
+  display: flex;
+  float: right;
+}
+
+.payment-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+
+
+.pay {
+  background-color: #4CAF50;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.pay:hover {
+  background-color: #45a049;
+}
+
+.cancel {
+  background-color: #ccc;
+  transition: background-color 0.3s ease; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: #999; 
+}
+
+
+
+.radio-label-c input[type="radio"],
+.radio-label-e input[type="radio"] {
+  display: none; /* Hide the actual radio button */
+}
+
+.radio-label-c, .radio-label-e {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f2f2f2; /* Background color for unselected state */
+  border: 2px solid transparent; /* Border for unselected state */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.radio-label-e {
+  margin-left: 50px;
+}
+
+.radio-label-c:hover, .radio-label-e:hover {
+  border-color: #0c6cfc; /* Border color on hover */
+}
+
+.radio-label-c img,
+.radio-label-e img {
+  width: 150px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+  display: block;
+  margin: 0 auto; /* Center image horizontally */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.radio-label-c input[type="radio"]:checked,
+.radio-label-e input[type="radio"]:checked{
+  outline: none; /* Remove outline */
+}
+
+.radio-label-c input[type="radio"]:checked + img,
+.radio-label-e input[type="radio"]:checked + img  {
+  border: 2px solid #4CAF50; /* Border color for selected state */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+}
+
+/* Additional border color for selected state */
+.radio-label-c input[type="radio"]:checked ~ .outer-border,
+.radio-label-e input[type="radio"]:checked ~ .outer-border {
+  border: 3px solid #0c6cfc;
+}
+
+.outer-border {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  pointer-events: none; /* Prevent clicking through the border */
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+
+.max_qty_msg {
+  height: 280px;
+  width: 300px;
+  background-color: #fbf3cb;
+  border-radius: 6px;
+  position: fixed; /* Change to fixed */
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+.max_qty_msg.open{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.fa-circle-xmark{
+  width: 0px;
+  margin-bottom: 30px;
+  /* filter: invert(1); */
+}
+
+.max_qty_msg h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #333333;
+} 
+
+.max_qty_msg p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+.max_qty_msg .close-icon {
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  color: #333333;
+}
+
+.address-selection-popup {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.address-selection-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-selection-popup button {
+  margin-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9997; 
+  visibility: hidden;
+}
+
+.overlay.visible {
+  visibility: visible;
+}
+
+#user_address {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+}

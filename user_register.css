@@ -1,0 +1,314 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 420;
+}
+
+body{
+    background-image: url("images/register_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 450px;
+    height: 530px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(162, 162, 163);
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    background-color: rgba(224, 218, 218, 0.9); 
+}
+
+#form-top{
+    border: none;
+    height:480px;
+    margin: 0px 20px;
+}
+
+#form-bottom{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: none;
+    height: 50px;
+    justify-content: left; 
+    align-items: center;
+    display:flex;
+}
+
+#header{
+    justify-content: center; 
+    align-items: center; 
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 35px; 
+    position:relative;
+}
+
+.input-box{
+    border: none;
+    margin-bottom:20px;
+    position: relative;     
+}
+
+.input-box input {
+    background-repeat: no-repeat;
+    background-size: 18px 18px; 
+    background-position: right 12px center;
+}
+
+#eyeIcon_1 ,#eyeIcon_2{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-30%);
+    cursor: pointer;
+}
+
+#eyeIcon_2{
+    top: 62%;
+}
+
+#name {
+    background-image: url(images/user.png);
+}
+
+#email {
+    background-image: url(images/email.png);
+}
+
+#name, #password, #confirm_password, #email{
+    width:390px;
+    border-radius: 10px;
+    height:40px;
+    border:transparent;
+    box-shadow: 0 0 15px rgba(184, 186, 187, 0.5);
+    outline: none;
+    padding-left:20px;
+}
+
+#name:focus, #password:focus, #confirm_password:focus, #email:focus,
+#name:hover, #password:hover, #confirm_password:hover, #email:hover{
+    box-shadow: 0 0 15px rgb(117, 118, 118);
+}
+
+#choice{
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 65px;
+    width:115px;
+    height: 25px;
+    outline: none;
+}
+
+#choice option{
+      font-size: 14px;
+      text-align: center;
+}
+
+#register{
+    font-weight: 500;
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center; 
+    display:flex;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    border: none;
+    background-color: rgb(152, 153, 152);
+}
+
+#register:active{
+    box-shadow: 0 0 15px rgba(117, 118, 118, 0.5);
+}
+
+#register:hover{
+    background-color: rgb(117, 118, 118);
+    transition: background-color 0.3s; 
+    box-shadow: 0 0 5px rgb(117, 118, 118);
+}
+
+span{
+    font-size: 14px;
+}
+
+#login{
+    margin-left: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#login:hover{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#login:active{
+    color:rgb(42, 10, 181);
+}
+
+/*registration success message for email*/
+.successful_msg {
+  height: 340px;
+  width: 380px;
+  background-color: #f2f1f1;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+.successful_msg.open{
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.successful_msg img{
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.successful_msg h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 25px;
+} 
+
+.successful_msg p {
+    font-size: 18px;
+}
+
+.fa-xmark {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+/*error message for email format*/
+.email_error_msg, .pass_error_msg{
+    height: 340px;
+    width: 380px;
+    background-color: #f2f1f1;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    z-index: 9999;
+}
+
+.email_error_msg.open, .pass_error_msg.open{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.email_error_msg img, .pass_error_msg img{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.email_error_msg h2, .pass_error_msg h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 25px;
+} 
+
+.email_error_msg p, .pass_error_msg p {
+    font-size: 18px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9998; 
+    visibility: hidden;
+}
+
+.overlay.visible {
+    visibility: visible;
+}
+
+#message {
+    display:none;
+    position: absolute;
+    top: 110px;
+    width: 400px;
+    height: 130px;
+    border-radius: 5px;
+    border:grey solid 1px;
+    background: #f1f1f1;
+    color: black;
+    padding: 5px;
+    z-index: 9999;
+
+}
+
+
+#message h6 {
+    margin: 0px;
+    margin-left: 10px;
+
+}
+
+#message p {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 0px;
+}
+
+#message span {
+    color:black;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -5px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -5px;
+    content: "✖";
+}
+

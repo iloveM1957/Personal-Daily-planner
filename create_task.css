@@ -1,0 +1,201 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 18px;
+    user-select: none;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height:550px;
+    width:480px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #f9f2ef;
+    visibility: visible;
+    position: absolute;
+    z-index: 9999;
+    padding: 0px;
+    margin:0px;
+}
+
+#category_title{
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color:rgba(16, 135, 240);
+}
+
+#exit_button{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#exit_logo{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+#category_logo{
+    height:35px;
+    width:35px;
+    margin: 0px;
+    position:relative;
+    left: 12px;
+    top: 5px;
+}
+
+.radio{
+    position:relative;
+    display:flex;
+    left: 55px;
+    top: -35px;           
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+#task_title{
+    position: relative;
+    left: 65px;
+    top: -20px;
+    width: 380px;
+    height: 30px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+#calender_logo{
+    height:40px;
+    width:40px;
+    margin: 0px;
+    position: absolute;
+    left: 12px;
+    top: 160px;
+}
+
+.date{
+    position: relative;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 0px;
+    height: 75px;
+    width: 320px;
+}
+
+#start_date, #end_date{
+    position: absolute;
+    right: 0px;
+    border-radius: 6px;
+    width:200px;
+}
+
+#end_date{
+    bottom:5px;
+}
+
+#end_label{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+#reminder_logo{
+    position: relative;
+    display: block;
+    height:40px;
+    width:40px;
+    left: 10px;
+    top: 15px;
+}
+
+#reminder_label{
+    position: relative;
+    left: 65px;
+    top: -15px;
+}
+
+#reminder_time{
+    position: relative;
+    border-radius: 6px;
+    left: 75px;
+    top: -15px;
+}
+
+#recurring_logo{
+    position: relative;
+    display: block;
+    height:40px;
+    width:40px;
+    left: 10px;
+    top: 10px;
+}
+
+#recurring_label{
+    position: relative;
+    left: 65px;
+    top: -20px;
+}
+
+#recurring_time{
+    position: relative;
+    border-radius: 6px;
+    left: 75px;
+    top: -20px;
+}
+
+#note_logo{
+    position: relative;
+    display: block;
+    height:40px;
+    width:40px;
+    left: 12px;
+    top: 5px;
+}
+
+#note{
+    position: relative;
+    border-radius: 6px;
+    height: 90px;
+    width: 380px;
+    left: 65px;
+    top: -30px;
+    resize: vertical; 
+    overflow: auto; 
+    min-height: 50px; 
+    max-height: 90px; 
+    padding: 5px;
+}
+
+#submit_task{
+    position: absolute;
+    display: block;
+    left: 75px;
+    bottom: 15px;
+    width: 360px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgba(16, 135, 240, 0.9);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

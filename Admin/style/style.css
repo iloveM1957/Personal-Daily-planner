@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: url('image/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.container_other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box{
+    background: #9CE2C0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8BB4A0;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #fbf8f8;
+    outline: none;
+}
+
+/***************************** Feedback **************************/
+
+.container_Feedback{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.boxFeedback{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-boxFeedback{
+  width: 700px;
+  margin: 0px 10px;
+}
+
+.form-boxFeedback header{
+  font-size: 18px;
+  font-weight: 550;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-boxFeedback form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+}
+
+.feedback-date {
+  float: right;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.feedback-content {
+  flex-grow: 1;
+  padding-right: 15px;
+  word-break: break-word;
+}
+
+.space {
+  flex-shrink: 0;
+}
+/*************************** Announcement ***************************/
+
+.container_Announcement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.boxAnnouncement{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form-boxAnnouncement{
+  width: 700px;
+  margin: 0px 10px;
+}
+
+.form-boxAnnouncement header{
+  font-size: 18px;
+  font-weight: 550;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form-boxAnnouncement form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+}
+
+/*************************** Home ***************************/
+
+.nav{
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  z-index: 10;
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  width: 100%; 
+}
+
+.logo{
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 90px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a{
+    padding: 0 10px;
+    margin-left: 0; 
+    position: absolute;
+    right: 30px; 
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+/************************** for sidebar ***********************************/
+
+  /* The sidebar menu */
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #6D5B5B; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .side-header{
+        margin-left: 30px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    background-color: #584e46;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px; /* The position of the control button at the top */
+    right: 10px; /* The position of the control button on the right */
+    font-size: 34px;
+    cursor: pointer;
+    background-color: transparent; /* Default transparent background */
+    color: #ffffff; /* Default text color */
+    padding: 2px 15px;
+  
+  }
+  
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #000000;
+    background-color:transparent;
+    position: fixed; 
+    top: 100px;
+    left: 0; 
+  }
+  
+  .openbtn:hover {
+    color: #8e8d8b;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main, #main-content {
+    transition: margin-left 0.5s ease; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+.side-header img{
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+/**************************** admin dashboard styling *************************/
+.card{
+    background-color: #F2AA84;
+    height: 230px;
+    min-width: 260px;
+    padding:20px;
+    margin: 50px;
+    border-radius: 40px;
+    box-shadow: 8px 5px 5px #3B3131;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/************************** table styling *********************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    min-height: 20px;
+    min-width: 930px;
+  }
+
+  .table {
+    border-radius: 15px;
+    overflow: hidden; 
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+  td,th {
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #FBE3D6;
+    color: #000000;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+  }
+  
+  tr {
+    width: 100%;
+    background-color: #FBE3D6;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9d9ce;
+  }
+
+/***************************** Popmsg ************************************/
+
+  /* The sidebar menu */
+.popmsg {
+    display: none; /* Initial hiding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 130;
+}
+  
+.popup {
+  display: none; /* Initial hiding */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 140;
+  width: 400px;
+}
+
+.popup-content {
+  position: relative;
+  color: #4BA3C3;
+}
+  
+
+.btnAnnOpen{
+  height: 35px;
+  background: #4BA3C3;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btnAnnOpen:hover{
+  opacity: 0.82;
+}
+
+.btnAnnClose {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  resize: vertical; /* Allow users to resize vertically */
+  min-height: 100px; /* Set minimum height */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btnAnnSubmit {
+  background: #4BA3C3;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+  /* Position and style the close button (top right corner) */
+  .popup .btnAnnClose {
+    position: absolute;
+    top: -25px; /* The position of the control button at the top */
+    right: -25px; /* The position of the control button on the right */
+    font-size: 34px;
+    cursor: pointer;
+    background-color: transparent; /* Default transparent background */
+    color: #000000; /* Default text color */
+    padding: 2px 15px;
+  
+  }
+
+  
+  
+
+
+
+
+
+
+/************************** Ann styling *********************************/
+/* Ann.css */
+.annBody {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.annContainer {
+  max-width: 800px;
+  min-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.annHeader {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.annAccordion {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.annAccordion:hover {
+  background-color: #ddd;
+}
+
+.annPanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.annAccordion:after {
+  content: '\02795';
+  font-size: 16px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.annActive:after {
+  content: "\2796";
+}
+
+
+/******************************* Edit Profile ***************************************/
+
+/* main container */
+.containerPro {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+  display: flex;
+  gap: 30px;
+  width: 800px; /* Adjust width to fit layout */
+}
+
+/* Left avatar area */
+.avatarSectionPro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatarWrapperPro {
+  text-align: center;
+}
+.avatarPro {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+/* Right content area */
+.profileContentPro {
+  flex: 2;
+}
+
+/* File upload button */
+.inputFilePro {
+  display: none;
+}
+.btnUploadPro {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #4BA3C3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.btnUploadPro:hover {
+  opacity: 0.9;
+}
+
+
+.tabPro { 
+  display: flex; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+.tabBtnPro { 
+  flex:1; 
+  padding:12px; 
+  background:#4BA3C3; 
+  border:none; 
+  border-radius:5px; 
+  color:white; 
+  cursor:pointer; 
+}
+
+.tabBtnPro.active { 
+  background: #3B8DA6; 
+}
+
+.formPro { 
+  display: none; 
+}
+
+.formPro.activeForm { 
+  display: block; 
+}
+
+.headerPro { 
+  font-size:24px; 
+  text-align:center; 
+  margin-bottom:25px; 
+  color:#333; 
+}
+
+.formGroupPro { 
+  margin-bottom:20px; 
+}
+
+.labelPro { 
+  display:block; 
+  font-size:14px; 
+  margin-bottom:8px; 
+  color:#444; 
+}
+
+.inputPro { 
+  width:100%; 
+  height:40px; 
+  padding:0 12px; 
+  border:1px solid #ddd; 
+  border-radius:5px; 
+}
+
+.btnSavePro { 
+  width:100%; 
+  padding:12px; 
+  background:#4BA3C3; 
+  border:none; 
+  border-radius:5px; 
+  color:white; 
+  cursor:pointer; 
+}
+
+
+.buttonGroupPro {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Delete button style */
+.btnDeletePro {
+  width: 100%;
+  padding: 12px;
+  background: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btnDeletePro:hover {
+  opacity: 0.9;
+}
+
+
+/************************** buton styling *********************************/
+
+.btn{
+  height: 35px;
+  background: rgba(76,68,182,0.808);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover{
+  opacity: 0.82;
+}
+
+.btnEUseraccount{
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 0px 10px;
+}
+.btnEUseraccount:hover{
+  opacity: 0.82;
+}
+
+.btnFeedback{
+  margin-right: 20px;
+  position: relative;
+  left: 300px;
+  background: transparent;
+  border: 0;
+  border-radius: 5px;
+  color:  rgba(241, 11, 11, 0.838);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btnFeedback:hover{
+  opacity: 0.82;
+  color: rgb(224, 126, 126);
+}
+
+.spaceAnn {
+  position: relative;
+  margin-bottom: 20px;
+  left: 360px;
+}
+
+.space {
+  position: relative;
+  left: 290px;
+}
+
+.btnSpecial{
+  height: 35px;
+  background: #4BA3C3;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btnSpecial:hover{
+  opacity: 0.82;
+}
+
+.btnAnnouncement {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  color: #000000;
+  background-color:transparent; 
+}
+
+  /* The button used to open the popMsg */
+  .rightSpecial {
+    padding: 0 10px;
+    margin-left: 0; 
+    position: fixed;
+    right: 50px; 
+    bottom: 50px;
+  }
+
+  
+
+

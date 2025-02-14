@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f9f2ef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Announcement Box */
+.announcement {
+    background: #f9f2ef;
+    padding: 18px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.announcement:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Announcement Header */
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title */
+.announcement-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0077b6;
+    transition: color 0.3s ease-in-out;
+}
+
+.announcement-header h3:hover {
+    color: #023e8a;
+}
+
+/* Date */
+.announcement-date {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Announcement Content */
+.announcement-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+
+    word-wrap: break-word; /* Breaks long words */
+    overflow-wrap: break-word;
+    white-space: normal; /* Ensures text wraps to the next line */
+    max-width: 100%; /* Ensures content stays inside container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .announcement {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .announcement-header h3 {
+        font-size: 18px;
+    }
+
+    .announcement-content {
+        font-size: 15px;
+    }
+}
+
+.short-text {
+    display: inline;
+}
+
+.full-text {
+    display: none; /* Hide full content initially */
+}
+
+.read-more-btn {
+    border: none;
+    background-color: #d1e9f1; 
+    color: #005f77;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 5px;
+    display: block;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    padding: 8px 12px; 
+}

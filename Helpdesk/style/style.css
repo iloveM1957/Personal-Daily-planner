@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: url('image/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.container_other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box{
+    background: #9CE2C0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    top: 100px;;
+    position: relative;
+}
+
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8BB4A0;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #fbf8f8;
+    outline: none;
+}
+
+/*************************** Home ***************************/
+
+h1.title {
+  text-align: center;
+  border: 3px solid black; /* Black border */
+  padding: 10px 20px;
+  display: inline-block; /* Fit the content */
+  border-radius: 8px; /* Rounded edges */
+  background-color: blue;
+  font-weight: bold;
+}
+.transparent-box {
+  background: rgba(248, 249, 250, 0.8); /* Light gray with transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  z-index: 100;
+  position: fixed;  /* Keeps it fixed in place */
+  top: 0;  /* Sticks to the top */
+  left: 0; /* Ensures it stays on the left */
+  width: 100%;  /* Full width */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
+
+.logo{
+    font-size: 60px;
+    font-weight: 1000;
+    margin-left: 90px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a{
+    padding: 0 10px;
+    margin-left: 0; 
+    position: absolute;
+    right: 30px; 
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+/************************** for sidebar ***********************************/
+
+  /* The sidebar menu */
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1000000; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3B3131; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .side-header{
+        margin-left: 30px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    background-color: #584e46;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 34px;
+    cursor: pointer;
+    background-color: transparent; 
+    color: #ffffff; 
+    padding: 2px 15px;
+  
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #000000;
+    background-color:transparent;
+    position: fixed; 
+    top: 100px;
+    left: 0;
+  }
+  
+  .openbtn:hover {
+    color: #ECDAC9;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main, #main-content {
+    transition: margin-left 0.5s ease; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  .side-header img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+/**************************** helpdesk dashboard styling *************************/
+.card{
+  background-color: #F2AA84;
+  height: 150px;
+  min-width: 180px;
+  padding:50px;
+  margin: 50px;
+  border-radius: 40px;
+  box-shadow: 8px 5px 5px #3B3131;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/************************** table styling *********************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    min-height: 20px;
+    min-width: 930px;
+  }
+
+  td,th {
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #584e46;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+  }
+
+  tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+
+/************************** button styling *********************************/
+
+.btn{
+  height: 35px;
+  background: rgba(76,68,182,0.808);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover{
+  opacity: 0.82;
+}
+
+.btnEdit{
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 0px 10px;
+}
+.btnEdit:hover{
+  opacity: 0.82;
+}
+
+/******************************* Edit Profile ***************************************/
+
+.containerPro {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+  display: flex;
+  gap: 30px;
+  width: 800px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatarSectionPro {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatarWrapperPro {
+  text-align: center;
+}
+.avatarPro {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.profileContentPro {
+  flex: 2;
+}
+
+.inputFilePro {
+  display: none;
+}
+.btnUploadPro {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #4BA3C3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.btnUploadPro:hover {
+  opacity: 0.9;
+}
+
+
+.tabPro { 
+  display: flex; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+.tabBtnPro { 
+  flex:1; 
+  padding:12px; 
+  background:#4BA3C3; 
+  border:none; 
+  border-radius:5px; 
+  color:white; 
+  cursor:pointer; 
+}
+
+.tabBtnPro.active { 
+  background: #3B8DA6; 
+}
+
+.formPro { 
+  display: none; 
+}
+
+.formPro.activeForm { 
+  display: block; 
+}
+
+.headerPro { 
+  font-size:24px; 
+  text-align:center; 
+  margin-bottom:25px; 
+  color:#333; 
+}
+
+.formGroupPro { 
+  margin-bottom:20px; 
+}
+
+.labelPro { 
+  display:block; 
+  font-size:14px; 
+  margin-bottom:8px; 
+  color:#444; 
+}
+
+.inputPro { 
+  width:100%; 
+  height:40px; 
+  padding:0 12px; 
+  border:1px solid #ddd; 
+  border-radius:5px; 
+}
+
+.btnSavePro { 
+  width:100%; 
+  padding:12px; 
+  background:#4BA3C3; 
+  border:none; 
+  border-radius:5px; 
+  color:white; 
+  cursor:pointer; 
+}
+
+
+.buttonGroupPro {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btnDeletePro {
+  width: 100%;
+  padding: 12px;
+  background: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btnDeletePro:hover {
+  opacity: 0.9;
+}
+
+/* ===================== UserFAQs.php Styles ===================== */
+.container_FAQs {
+  max-width: 1600px;
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  background-color: wheat;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.faq-header {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#faqList {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Custom Scrollbars */
+#faqList::-webkit-scrollbar,
+.panel::-webkit-scrollbar {
+  width: 8px;
+}
+#faqList::-webkit-scrollbar-thumb,
+.panel::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+#faqList::-webkit-scrollbar-track,
+.panel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Accordion Styles */
+.accordion {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 10px
+}
+.accordion, .panel {
+  width: 100%;  /* Ensures they take the same width */
+  padding: 15px; /* Matching padding */
+  box-sizing: border-box; /* Include padding and border in width/height calculations */
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Position relative to this container */
+  overflow: visible;
+}
+.accordion:after {
+  content: '\02795'; /* Plus sign (+) */
+  font-size: 16px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Minus sign (-) */
+}
+
+.panel {
+  padding: 25px;
+  background-color: white;
+  max-height: 300px;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease-out;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.panel.expanded {
+  padding: 25px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 50%;  /* Align vertically in the center */
+  right: -40px; /* Move buttons outside the accordion box, adjust value as needed */
+  transform: translateY(-50%); /* Center vertically */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 2px 5px;
+  border-radius: 4px;
+  z-index: 1;
+  flex-direction: row;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger icons */
+  padding: 0;
+  margin: 0;
+}
+
+.edit-btn { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Icon size */
+  padding: 0;
+  margin: 0;
+  color: #3b6db6; 
+}
+.delete-btn { 
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Icon size */
+  padding: 0;
+  margin: 0;
+  color: red; 
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  margin: 10% auto;
+  border-radius: 10px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* General Button Styles */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #0056b3;
+  border-color: #004494;
+}
+button:focus {
+  outline: 3px solid #004494;
+}
+.faq-item {
+  margin-bottom: 15px;
+  padding-right: 40px;
+}
+
+
+
+/* ===================== Question bank Styles ===================== */
+.container_QuestionBank {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 20px;
+}
+.question-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.username {
+  font-weight: bold;
+  color: #007bff;
+  text-align: center; /* Center align the username */
+  margin-bottom: 10px; /* Space between username and question */
+}
+.question-text {
+  font-size: 16px;
+  margin-bottom: 10px; /* Space between question and button */
+}
+.done-btn, .undo-btn {
+  align-self: flex-end; /* Button aligned to the right */
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.undo-btn {
+  background-color: grey;
+}
+.settled {
+  background: #d4edda !important; /* Light green for solved */
+}
+h2.title {
+  text-align: center;
+  border: 3px solid black; /* Black border */
+  padding: 10px 20px;
+  display: inline-block; /* Fit the content */
+  border-radius: 8px; /* Rounded edges */
+  background-color: #FFD700; /* Butter yellow */
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.delete-btn, .edit-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+}
